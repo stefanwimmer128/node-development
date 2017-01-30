@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stefanwimmer128/stefanwimmer128.github.io.git"
+    "url": "git+https://github.com/stefanwimmer128/node-development.git"
   },
   "author": "Stefan Wimmer <stefanwimmer128@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stefanwimmer128/stefanwimmer128.github.io/issues"
+    "url": "https://github.com/stefanwimmer128/node-development/issues"
   },
-  "homepage": "https://github.com/stefanwimmer128/stefanwimmer128.github.io#readme",
+  "homepage": "https://github.com/stefanwimmer128/node-development#readme",
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
