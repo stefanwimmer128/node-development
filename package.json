@@ -1,6 +1,6 @@
 {
   "name": "node-development",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "Combine objects / array based on environment",
   "main": "dist/development.js",
   "scripts": {
@@ -20,7 +20,9 @@
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.22.0",
-    "lodash": "^4.17.4",
     "webpack": "^2.2.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
   }
 }
