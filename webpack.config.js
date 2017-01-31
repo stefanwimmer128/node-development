@@ -20,6 +20,9 @@ module.exports = {
                     presets: [
                         "es2015",
                     ],
+                    plugins: [
+                        "add-module-exports",
+                    ],
                 },
             },
         ],

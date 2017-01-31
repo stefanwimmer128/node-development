@@ -95,6 +95,7 @@ function combine(a, b) {
     if (Array.isArray(a) && Array.isArray(b)) return _lodash2.default.concat([], a, b);
     if ((typeof a === "undefined" ? "undefined" : _typeof(a)) === "object" && a !== null && (typeof b === "undefined" ? "undefined" : _typeof(b)) === "object" && b !== null) return _lodash2.default.assign({}, a, b);
 }
+module.exports = exports["default"];
 
 /***/ }),
 /* 1 */
@@ -130,6 +131,8 @@ function development(_default, development, production) {
    * Created on 30.01.17 at 15:30
    * @author Stefan Wimmer <stefanwimmer128@gmail.com>
    */
+
+module.exports = exports["default"];
 
 /***/ })
 /******/ ]);
