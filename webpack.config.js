@@ -19,9 +19,12 @@ module.exports = {
                 query: {
                     presets: [
                         "es2015",
+                        "flow",
                     ],
                     plugins: [
                         "add-module-exports",
+                        "syntax-trailing-function-commas",
+                        "typecheck",
                     ],
                 },
             },
@@ -33,7 +36,7 @@ module.exports = {
         filename: "development.js",
         
         library: "development",
-        libraryTarget: "commonjs2",
+        libraryTarget: "umd2",
     },
     target: "node",
 };
