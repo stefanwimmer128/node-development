@@ -20,12 +20,16 @@ export default function development(
 {
     if (env === "development" && mode === POST_DEFAULT)
         return combine(_default, development);
+    
     if (env === "development" && mode === PRE_DEFAULT)
         return combine(development, _default);
+    
     if (env === "production" && mode === POST_DEFAULT)
         return combine(_default, production);
+    
     if (env === "production" && mode === PRE_DEFAULT)
         return combine(production, _default);
+    
     return _default;
 }
 

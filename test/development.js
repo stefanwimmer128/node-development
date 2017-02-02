@@ -6,5 +6,6 @@
 require("babel-register");
 
 exports.array = require("./array");
+exports.error = require("./error.js");
 exports.object = require("./object");
 exports.string = require("./string");

@@ -104,9 +104,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function combine(a, b) {
     if (Array.isArray(a) && Array.isArray(b)) return _lodash2.default.concat([], a, b);
+
     if (typeof a === "string" && typeof b === "string") return a + b;
+
     if ((typeof a === "undefined" ? "undefined" : _typeof(a)) === "object" && a !== null && (typeof b === "undefined" ? "undefined" : _typeof(b)) === "object" && b !== null) return _lodash2.default.assign({}, a, b);
-    throw new Error("ArgumentError", "Arguments passed to combine() not compatible!");
+
+    throw new TypeError("Arguments passed to combine() not compatible!");
 }
 module.exports = exports["default"];
 
@@ -158,9 +161,13 @@ function development(_default, development, production) {
     }
 
     if (env === "development" && mode === POST_DEFAULT) return (0, _combine2.default)(_default, development);
+
     if (env === "development" && mode === PRE_DEFAULT) return (0, _combine2.default)(development, _default);
+
     if (env === "production" && mode === POST_DEFAULT) return (0, _combine2.default)(_default, production);
+
     if (env === "production" && mode === PRE_DEFAULT) return (0, _combine2.default)(production, _default);
+
     return _default;
 }
 
